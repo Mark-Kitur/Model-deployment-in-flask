@@ -1,6 +1,7 @@
 from flask import Flask,jsonify, render_template, request, url_for
 from joblib import load
 import numpy as np
+import pandas as pd
 app =Flask(__name__, template_folder='templete')
 
 model =load('floods.joblib')
